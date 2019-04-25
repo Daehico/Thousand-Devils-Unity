@@ -12,7 +12,7 @@ namespace Assets.Scripts
         
         ShipMovementController _movementController;
 
-        public void OnTriggerStay2D(Collider2D collision)
+        public void OnTriggerEnter2D(Collider2D collision)
         {
             _movementController = collision.GetComponent<ShipMovementController>();
             WindZones(_movementController);
